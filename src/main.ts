@@ -6,6 +6,6 @@ const tonConnectUI = new TonConnectUI({
   buttonRootId: "ton-connect",
 });
 
-const unsubscribe = tonConnectUI.onStatusChange((walletInfo) => {
+tonConnectUI.onStatusChange((walletInfo) => {
   console.log(walletInfo);
 });
